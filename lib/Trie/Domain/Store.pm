@@ -1,4 +1,4 @@
-package Tree::ReverseDomain;
+package Trie::Domain::Store;
 # vim: foldmethod=marker
 use strict;
 use warnings;

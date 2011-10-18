@@ -4,11 +4,11 @@
 use strict;
 use warnings;
 use lib qw(./lib);
-use Tree::ReverseDomain;
+use Trie::Domain::Store;
 use Data::Dumper;
 use List::UtilsBy qw(rev_sort_by);
 
-my $tree = Tree::ReverseDomain->new();
+my $tree = Trie::Domain::Store->new();
 
 $tree->add("www.richardharman.com")->{count} = 3;
 $tree->add("digg.com")->{count}              = 2;

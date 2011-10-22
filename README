@@ -1,0 +1,30 @@
+This is a perl module that uses a Trie (see http://en.wikipedia.org/wiki/Trie for a better description) for efficient storage of DNS domain names, with a hashref bucket of storage at the end of the key.
+
+
+Below is an example list of domain names, and how they're stored in the trie, presented in beautiful YAML form.
+
+www.richardharman.com
+www.google.com
+www.facebook.com
+www.cnn.com
+
+--- 
+root:
+  .: {}
+  com:
+    cnn:
+      www:
+        .: {}
+    digg:
+      www:
+        .: {}
+    facebook:
+      www:
+        .: {}
+    google:
+      www:
+        .: {}
+    richardharman:
+      www:
+        .: {}
+
